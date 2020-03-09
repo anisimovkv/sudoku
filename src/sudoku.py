@@ -32,22 +32,3 @@ def find_variant(input: np.ndarray) -> np.ndarray:
                     if values.size == 1:
                         input[ii][jj] = values[0]
     return input
-
-# colums: np.ndarray = np.transpose(
-#     input[:, start_column:stop_column])
-# for colum in colums:
-#     result = np.union1d(colum, rows.flatten())
-#     result = np.union1d(result, block.flatten())
-#     values = np.setdiff1d(all_elemnts, result)
-#     if values.size[0] == 1:
-#         input[] = values[0]
-
-# result: np.ndarray = reduce(
-#     np.intersect1d,
-#     (block.flatten(), colums.flatten(), rows.flatten()))
-
-# print(result)
-#     print('row', start_row, stop_row)
-#     print('colum', start_column, stop_column)
-#     print('end j')
-# print('end i')
